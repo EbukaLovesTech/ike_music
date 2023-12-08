@@ -1,189 +1,122 @@
-.page_intro_section {
-  background: var(--intro-section-bg);
+.main h1 {
+    font-size: 5rem;
+    margin-bottom: 1.5rem;
+}
+
+.main h2 {
+    font-size: 2.5rem;
+}
+
+.hero_img {
+    background: bisque;
 }
 
 .intro_wrapper {
-  min-height: 80vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding: 1rem 0 1.5rem;
+    padding: 0 0.8rem;
+    margin-bottom: 4rem;
 }
 
-.intro_wrapper h1 {
-  text-align: center;
-  font-size: 3.5rem;
-  color: var(--green);
-  letter-spacing: 5px;
+.intro_tag {
+    line-height: 1.4;
+    width: 220px;
+    border: 1px solid rgb(189, 189, 189);
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    font-size: 1.8rem;
+    color: bisque;
 }
 
-.latest_music {
-  padding-left: 1.5rem;
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
+.music_section {
+    text-align: center;
 }
 
-.latest_music_info {
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
+.music_section>div {
+    padding: 6rem 0;
 }
 
-.latest_music_info h3 {
-  font-size: 1.6rem;
+.artcover {
+    display: block;
+    margin: 0 auto;
 }
 
-.latest_music_info a {
-  margin-top: 2rem;
-  padding: 1rem;
-  border: 1px solid black;
-  width: 32.5%;
-  text-align: center;
-  border-radius: 25px;
+.music_section h2 {
+    margin-bottom: 4rem;
 }
 
-.all_music_wrapper,
-.videos_wrapper,
-.about_wrapper {
-  padding: 4rem 1rem;
+.music_section p {
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    color: bisque;
 }
 
-.music_section,
+.music_section button {
+    background: none;
+    color: inherit;
+    font-size: 1.3rem;
+    border-bottom: 1px solid var(--white);
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    margin-top: 0.5rem;
+    padding: 0.2rem 0.3rem;
+}
+
 .about_section {
-  color: var(--music-section-text);
-  background: var(--dark);
+    padding: 4rem 0;
 }
 
-.video_section {
-  color: var(--music-section-text);
-  background: url('../../public/broski.png');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center top;
+.about_section h2 {
+    margin-bottom: 2.4rem;
 }
 
-.music {
-  text-align: center;
+.about_text_wrapper {
+    padding: 4rem 0.8rem;
 }
 
-.music h3 {
-  font-size: 1.2rem;
-  margin-bottom: 2rem;
-  margin-top: 1rem;
+.about_text_wrapper p {
+    margin-bottom: 2rem;
 }
 
-.music a {
-  border-bottom: 1px solid var(--music-section-text);
-  padding-bottom: 0.1rem;
+.about_img {
+    background: bisque;
 }
 
-.coming_soon {
-  padding: 3rem 0;
-  text-align: center;
-  font-size: 3rem;
+.about_wrapper {
+    background: var(--overlay);
+
 }
 
-.social_medias ul {
-  display: flex;
-  gap: 1rem;
-  justify-content: center;
-  list-style: none;
+.about_text_wrapper p {
+    line-height: 1.6;
 }
 
-.social_medias svg {
-  fill: var(--dark);
+.video {
+    text-align: center;
+    padding: 5rem 0;
 }
 
-.subscription_wrapper h2+div form {
-  display: flex;
-  justify-content: center;
-  gap: 1.2rem;
-  flex-direction: column;
-}
+@media screen and (min-width:1000px) {
+    .subscribe>h2+div {
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+        align-items: center;
+    }
 
-.subscription_wrapper {
-  padding: 3rem 1rem;
-}
+    .form_section,
+    .subs_img {
+        flex-grow: 1;
+    }
 
-.email {
-  border-right: none;
-  border-top: none;
-  border-left: none;
-  border-bottom: 1px solid var(--dark);
-  padding: 1rem 0.8rem 0.8rem;
-  font-size: 1.3rem;
-  background: transparent;
-}
+    .subs_img {
+        width: 414px;
+    }
 
-.submit {
-  padding: 0.9rem 0;
-  font-size: 1rem;
-  font-weight: 600;
-  background: transparent;
-  border: 1px solid var(--dark);
-}
-
-.submit,
-.email {
-  width: 100%;
-  color: inherit;
-}
-
-.footer {
-  padding: 2rem 0;
-  background: var(--intro-section-bg);
-}
-
-.footer_img_wrapper {
-  display: none;
-}
-
-.copyright {
-  text-align: center;
-  padding: 1rem 0 0;
-}
-
-@media screen and (min-width:800px) {
-  .latest_music {
-    flex-direction: row;
-  }
-
-  .latest_music_info a {
-    width: 200px;
-    margin: 0;
-  }
-
-  .latest_music_info {
-    flex-grow: 1;
-    gap: 1.8rem;
-  }
-
-  .intro_wrapper {
-    min-height: 100vh;
-    justify-content: flex-end;
-    gap: 10rem;
-  }
-
-  .subscription_wrapper h2+div form {
-    flex-direction: row;
-    justify-content: flex-start;
-    width: 500px;
-  }
-
-  .subscription_wrapper h2 {
-    text-align: start;
-  }
-
-  .social_medias ul {
-    justify-content: flex-end;
-  }
-
-  .copyright {
-    text-align: end;
-  }
-
-  .intro_wrapper h1 {
-    font-size: 6rem;
-  }
+    .subscribe h2 {
+        margin-bottom: 8rem;
+    }
 }

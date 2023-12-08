@@ -1,0 +1,24 @@
+.header {
+    margin-bottom: 3rem;
+    padding: 1rem 0.8rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid bisque;
+}
+
+.logo {
+    font-size: 1.8rem;
+    color: bisque;
+}
+
+.site_nav {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.footer {
+    text-align: center;
+    padding: 1rem 0;
+    border-top: 1px solid bisque;
+}

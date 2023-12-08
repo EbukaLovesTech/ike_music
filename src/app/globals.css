@@ -5,10 +5,9 @@
 }
 
 :root {
-  --intro-section-bg: #c6dce3;
-  --green: #56c100;
-  --dark: #142930;
-  --music-section-text: #C6DCE3;
+  --overlay: rgba(90, 57, 90, 0.1);
+  --body-bg: #1b0f1b;
+  --white: white;
 
 }
 
@@ -20,17 +19,13 @@ body {
 
 body {
   font-size: 1rem;
-  color: var(--dark);
+  background: var(--body-bg);
+  color: var(--white);
 }
 
 a {
   color: inherit;
   text-decoration: none;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
 }
 
 h2 {
@@ -45,5 +40,10 @@ svg {
 }
 
 p {
-  line-height: 1.4;
+  line-height: 1.6;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }
